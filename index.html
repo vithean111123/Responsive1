@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Frontend/Peoject/Ethan Computer/CSS/responsive.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container{
+            width: 82%;
+            height: auto;
+            margin: auto;
+            background-color: pink;
+            padding: 20px;
+        }
+        .top-box{
+            width: 100%;
+            height:auto;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+        }
+        .logo{
+            width: 30%;
+            height: auto;
+            background-color: green;
+        }
+        .navbar{
+            width: 69%;
+            height: auto;
+            background-color: rgb(106, 106, 178);
+        }
+        .cover{
+            width: 100%;
+            height: 150px;
+            background-color: orange;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .other-box{
+            width: 100%;
+            height: auto;
+            /* background-color: rgb(104, 104, 233); */
+            margin-top: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left{
+            width: 69%;
+            height: 300px;
+            background-color: rgb(255, 104, 104);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            width: 30%;
+            height: 300px;
+            background-color: rgb(104, 233, 233);
+            /* margin-left: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .other-box-under{
+            width: 100%;
+            height: auto;
+            /* background-color: rgb(104, 233, 138); */
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .box{
+            width: 24%;
+            height: 200px;
+            background-color: rgb(233, 104, 233);
+            /* margin: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(104, 233, 138);
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        @media (max-width: 1279px) and (min-width: 481px){
+            .container{
+                width: 95%;
+            }
+            .top-box{
+                flex-direction: column;
+            }
+            .logo{
+                width: 100%;
+            }
+            .navbar{
+                margin-top: 10px;
+                width: 100%;
+            }
+            .other-box{
+                flex-direction: column;
+                /* margin-top: 10px;    */
+            }
+            .left{
+                width: 100%;
+            }
+
+            .right{
+                margin-top: 10px;
+                width: 100%;
+                height: 160px;
+            }
+            .other-box-under{
+                /* flex-direction: column; */
+                flex-wrap: wrap;
+                /* margin-top: 10px; */
+            }
+            .box{
+                width: 49%;
+                /* margin: 5; */
+                /* margin-top: 10px; */
+                margin-bottom: 10px;
+            }
+            
+        }
+
+
+
+        @media (max-width: 480px){
+            .container{
+                width: 95%;
+            }
+            .top-box{
+                flex-direction: column;
+            }
+            .logo{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .navbar{
+                width: 100%;
+            }
+            .other-box{
+                flex-direction: column;
+            }
+            .left, .right{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .other-box-under{
+                flex-direction: column;
+            }
+            .box{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="top-box">
+            <div class="logo">Logo</div>
+            <div class="navbar">Navbar</div>
+        </div>
+        <div class="cover">Cover</div>
+        <div class="other-box">
+            <div class="left">Left</div>
+            <div class="right">Right</div>
+        </div>
+        <div class="other-box-under">
+            <div class="box">Box</div>
+            <div class="box">Box</div>
+            <div class="box">Box</div>
+            <div class="box">Box</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
